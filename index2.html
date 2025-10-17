@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./img/logo2.svg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+        body {
+            font-family: 'Fira Code', monospace;
+        }
+    </style>
+</head>
+<html>
+<body class="bg-[#282c33]">
+    <div class="w-full pb-20">
+        <div class="hidden md:flex fixed left-4 flex-col items-center gap-1.5 z-10">
+            <img src="./img/media.svg" alt="">
+            <a href="#" class="block"><img src="./img/Github.png" alt=""></a>
+            <a href="#" class="block"><img src="./img/Dribble.png" alt=""></a>
+            <a href="#" class="block"><img src="./img/Figma.png" alt=""></a>
+        </div>
+
+        <!-- Header -->
+          <header class="max-w-[1250px] mx-auto px-4 sm:px-6 py-6">
+            <nav class="w-full flex items-center justify-between">
+                <a href="#" class="logo">
+                    <svg class="w-16 sm:w-[72px] h-auto" viewBox="0 0 72 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.5H8V6.5H4H0V10.5V14.5V18.5H4H8V14.5H12H16V10.5V6.5V2.5H12ZM4 14.5H8V10.5H12V6.5H8V10.5H4V14.5Z" fill="white"/>
+                        <path d="M28.112 6.784V9.448H31.952V11.288H28.112V14.12H32.744V16H25.488V4.912H32.736L32.472 6.784H28.112ZM39.1458 4.128V13.328C39.1458 13.6693 39.2418 13.9147 39.4338 14.064C39.6311 14.208 39.9004 14.28 40.2418 14.28C40.4604 14.28 40.6711 14.256 40.8738 14.208C41.0764 14.1547 41.2658 14.0933 41.4418 14.024L42.0498 15.712C41.7618 15.8613 41.4151 15.992 41.0098 16.104C40.6044 16.216 40.1324 16.272 39.5938 16.272C38.5698 16.272 37.8178 15.9787 37.3378 15.392C36.8578 14.8 36.6178 14.008 36.6178 13.016V5.856H34.1138V4.128H39.1458ZM49.4995 7.504V14.272H51.6595V16H44.5635V14.272H46.9715V9.232H44.6435V7.504H49.4995ZM47.9715 3.056C48.4088 3.056 48.7662 3.192 49.0435 3.464C49.3208 3.736 49.4595 4.07467 49.4595 4.48C49.4595 4.88533 49.3208 5.22667 49.0435 5.504C48.7662 5.776 48.4088 5.912 47.9715 5.912C47.5288 5.912 47.1662 5.776 46.8835 5.504C46.6062 5.22667 46.4675 4.88533 46.4675 4.48C46.4675 4.07467 46.6062 3.736 46.8835 3.464C47.1662 3.192 47.5288 3.056 47.9715 3.056ZM61.0533 13.552C61.0533 13.872 61.0959 14.104 61.1813 14.248C61.2719 14.392 61.4159 14.5013 61.6133 14.576L61.0933 16.24C60.5919 16.192 60.1679 16.0827 59.8213 15.912C59.4799 15.736 59.2106 15.472 59.0133 15.12C58.6879 15.5093 58.2719 15.8 57.7653 15.992C57.2586 16.1787 56.7413 16.272 56.2133 16.272C55.3386 16.272 54.6399 16.024 54.1173 15.528C53.5999 15.0267 53.3413 14.384 53.3413 13.6C53.3413 12.6773 53.7013 11.9653 54.4213 11.464C55.1466 10.9627 56.1653 10.712 57.4773 10.712H58.6213V10.392C58.6213 9.94933 58.4773 9.62133 58.1893 9.408C57.9066 9.19467 57.4906 9.088 56.9413 9.088C56.6693 9.088 56.3199 9.128 55.8933 9.208C55.4666 9.28267 55.0399 9.392 54.6133 9.536L54.0293 7.856C54.5786 7.648 55.1493 7.49067 55.7413 7.384C56.3386 7.27733 56.8719 7.224 57.3413 7.224C58.6053 7.224 59.5386 7.48267 60.1413 8C60.7493 8.512 61.0533 9.25333 61.0533 10.224V13.552ZM57.0853 14.464C57.3573 14.464 57.6426 14.384 57.9413 14.224C58.2399 14.0587 58.4666 13.8267 58.6213 13.528V12.152H57.9973C57.2933 12.152 56.7759 12.2613 56.4453 12.48C56.1146 12.6933 55.9493 13.008 55.9493 13.424C55.9493 13.7493 56.0479 14.0053 56.2453 14.192C56.4479 14.3733 56.7279 14.464 57.0853 14.464ZM66.903 14.464C67.3243 14.464 67.663 14.3973 67.919 14.264C68.1803 14.1307 68.311 13.9307 68.311 13.664C68.311 13.4827 68.2603 13.3307 68.159 13.208C68.0577 13.0853 67.863 12.968 67.575 12.856C67.287 12.744 66.8603 12.6107 66.295 12.456C65.7777 12.3173 65.319 12.1413 64.919 11.928C64.5243 11.7147 64.215 11.44 63.991 11.104C63.7723 10.768 63.663 10.3493 63.663 9.848C63.663 9.34133 63.8043 8.89067 64.087 8.496C64.3697 8.10133 64.7857 7.792 65.335 7.568C65.8843 7.33867 66.5563 7.224 67.351 7.224C68.1083 7.224 68.767 7.32267 69.327 7.52C69.8923 7.712 70.3803 7.95733 70.791 8.256L69.783 9.744C69.431 9.52533 69.0523 9.352 68.647 9.224C68.2417 9.09067 67.8337 9.024 67.423 9.024C67.0123 9.024 66.7057 9.08 66.503 9.192C66.3057 9.29867 66.207 9.46133 66.207 9.68C66.207 9.824 66.2577 9.94933 66.359 10.056C66.4657 10.1573 66.663 10.264 66.951 10.376C67.239 10.4827 67.6603 10.616 68.215 10.776C68.7643 10.9307 69.2417 11.1093 69.647 11.312C70.0577 11.5147 70.375 11.7867 70.599 12.128C70.823 12.464 70.935 12.9093 70.935 13.464C70.935 14.0827 70.751 14.6027 70.383 15.024C70.015 15.44 69.527 15.752 68.919 15.96C68.311 16.168 67.6443 16.272 66.919 16.272C66.0977 16.272 65.3723 16.1547 64.743 15.92C64.1137 15.6853 63.5777 15.376 63.135 14.992L64.407 13.568C64.7377 13.824 65.111 14.0373 65.527 14.208C65.9483 14.3787 66.407 14.464 66.903 14.464Z" fill="white"/>
+                    </svg>
+                </a>
+                <ul class="hidden md:flex items-center justify-center gap-4 lg:gap-8 list-none">
+                    <li><a href="./index.html" class="text-[#9aa1ad] text-sm lg:text-base no-underline hover:text-yellow-200"><span class="text-purple-400">#</span>home</a></li>
+                    <li><a href="./index.html" class="text-[#9aa1ad] text-sm lg:text-base no-underline hover:text-yellow-200"><span class="text-purple-400">#</span>works</a></li>
+                    <li><a href="./index3.html" class="text-[#9aa1ad] text-sm lg:text-base no-underline hover:text-yellow-200"><span class="text-purple-400">#</span>about-me</a></li>
+                    <li><a href="#contact" class="text-[#9aa1ad] text-sm lg:text-base no-underline hover:text-yellow-200"><span class="text-purple-400">#</span>contacts</a></li>
+                    <li><a href="#" class="text-[#9aa1ad] text-sm lg:text-base no-underline hover:text-yellow-200">EN</a></li>
+                </ul>
+                <a href="#" class="md:hidden flex text-white text-2xl">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="5" width="24" height="2" fill="#D9D9D9"/>
+                        <rect x="9" y="12" width="15" height="2" fill="#D9D9D9"/>
+                    </svg>
+                </a>
+            </nav>
+        </header>
+        <!-- header end -->
+
+    <section class="max-w-[1250px] mx-auto px-4 md:px-6 py-6 mb-3">
+    <div>
+        <img src="./img/Frame 47.svg" alt="" class="mb-3">
+        <p class="text-[16px] text-[#acb3bf]">List of my projects</p>
+    </div>
+</section>
+<!-- 1 setion  end -->
+
+<!-- 2 section start -->
+<div>
+    <img src="" alt="" class="relative top-54 hidden md:block">
+</div>
+<section class="max-w-[1250px] mx-auto px-4 md:px-6 py-6 mb-10">
+    <div><h2 class="text-[32px] text-gray-100"><span class="text-[#c878de]">#</span>complete-apps</h2></div>
+    <div class="w-full pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <!-- Card 1 -->
+        <div class="border-2 border-[#acb3bf] flex flex-col gap-1 hover:border-[#c878de] ">
+            <div class="w-full"><img src="./img/Rectangle 22.jpg" alt="" class="w-full"></div>
+            <div class="px-2.5 pb-1.5 text-[#acb3bf] border-b-2 border-[#acb3bf]">
+                <p>HTML SCSS Python Flask</p>
+            </div>
+            <div class="px-5 pt-2.5 pb-4 flex flex-col gap-4">
+                <h1 class="text-white text-2xl font-medium">ChertNodes</h1>
+                <p class="text-[#ABB2BF] text-base">Minecraft servers hosting</p>
+                <div class="flex items-center gap-4 flex-wrap">
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Live ~></button>
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Cached ></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border-2 border-[#acb3bf] flex flex-col gap-1 hover:border-[#c878de] ">
+            <div class="w-full"><img src="./img/Rectangle 22 (1).png " alt="" class="w-full"></div>
+            <div class="px-2.5 pb-1.5 text-[#acb3bf] border-b-2 border-[#acb3bf]">
+                <p class="pb-2">CSS Express Node.js</p>
+            </div>
+            <div class="px-5 pt-2.5 pb-4 flex flex-col gap-4">
+                <h1 class="text-white text-2xl font-medium">Kahoot Answers <br> Viewer</h1>
+                <p class="text-[#ABB2BF] text-base">Get answers to your kahoot quiz</p>
+                <div class="flex items-center gap-4">
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Live ~></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border-2 border-[#acb3bf] flex flex-col gap-1 hover:border-[#c878de] ">
+            <div class="w-full"><img src="./img/Rectangle 22.png" alt="" class="w-full"></div>
+            <div class="px-2.5 pb-1.5 text-[#acb3bf] border-b-2 border-[#acb3bf]">
+                <p>React Express Discord.js Node.js</p>
+            </div>
+            <div class="px-5 pt-2.5 pb-4 flex flex-col gap-4">
+                <h1 class="text-white text-2xl font-medium">ProtectX</h1>
+                <p class="text-[#ABB2BF] text-base">Discord anti-crash bot</p>
+                <div class="flex items-center gap-4">
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Cached >=></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full pt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        <!-- cart 1 -->
+        <div class="border-2 border-[#acb3bf] flex flex-col gap-1 hover:border-[#c878de] ">
+            <div class="w-full"><img src="./img/Rectangle 22 (2).png" alt="" class="w-full"></div>
+            <div class="px-2.5 pb-1.5 text-[#acb3bf] border-b-2 border-[#acb3bf]">
+                <p>HTML CSS JS</p>
+            </div>
+            <div class="px-5 pt-2.5 pb-4 flex flex-col gap-4">
+                <h1 class="text-white text-2xl font-medium">Kotik Bot</h1>
+                <p class="text-[#ABB2BF] text-base">Multi-functional discord bot</p>
+                <div class="flex items-center gap-4">
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Live <~>></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-2 border-[#acb3bf] flex flex-col gap-1 hover:border-[#c878de] ">
+            <div class="w-full"><img src="./img/Rectangle 22 (3).png" alt="" class="w-full"></div>
+            <div class="px-2.5 pb-1.5 text-[#acb3bf] border-b-2 border-[#acb3bf]">
+                <p class="pb-2">Vue TS Less</p>
+            </div>
+            <div class="px-5 pt-2.5 pb-4 flex flex-col gap-4">
+                <h1 class="text-white text-2xl font-medium">Portfolio</h1>
+                <p class="text-[#ABB2BF] text-base">You're using it rn</p>
+                <div class="flex items-center gap-4">
+                    <button class="px-3.5 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Github <~>></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 2 section end -->
+
+<!-- 3 section start  -->
+<section class="max-w-[1250px] mx-auto px-4 md:px-6 py-6 mb-25">
+    <div><h2 class="text-[32px] text-gray-100 mb-10"><span class="text-[#c878de]">#</span>small-projects</h2></div>
+    <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+        <div class="flex flex-col gap-5">
+            <!-- cart 1 -->
+            <div class="w-full lg:w-[380px] border-2 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Discord.js TS JS</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">Bot boilerplate</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Figma template for website <br> about anti-raid, anti-crash <br> discord bot</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Github <~>></button></div>
+            </div>
+            <!-- caart 2 -->
+            <div class="w-full lg:w-[380px] border-2 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Figma</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">Crash protect <br> website</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Figma template for website <br> about anti-raid, anti-crash <br> discord bot</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Figma <~>></button></div>
+            </div>
+            <!-- cart 3 -->
+            <div class="w-full lg:w-[380px] border-2 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Python Quart HTML</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">Ooku</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Simple link shortener with auth</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Github <~>></button></div>
+            </div>
+        </div>
+        <!-- carta 2 -->
+        <div class="flex flex-col gap-5">
+            <!-- cart 1 -->
+            <div class="w-full lg:w-[380px] border-2 mb-8 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">VUE CSS JS</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">My blog</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Front-end of my future blog <br> website written in vue</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Github <~>></button></div>
+            </div>
+            <!-- caart 2 -->
+            <div class="w-full lg:w-[380px] border-2 mb-11 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">HTML CSS</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">CSS expirements</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Collection of my different <br> little projects in css</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Live <~>></button></div>
+            </div>
+            <!-- cart 3 -->
+            <div class="w-full lg:w-[380px] border-2 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Figma</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">School website</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Figma template website for my <br> school</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Figma <~>></button></div>
+            </div>
+        </div>
+        <!-- carta 3 -->
+        <div class="flex flex-col gap-5">
+            <!-- cart 1 -->
+            <div class="w-full lg:w-[380px] border-2 hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Figma</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">Chess pro</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Figma landing page about <br> service for viewing chess <br> tournaments</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Figma <~>></button></div>
+            </div>
+            <!-- caart 2 -->
+            <div class="w-full lg:w-[380px] border-2  hover:border-[#c878de] ">
+                <p class="text-[16px] text-[#acb3bf] px-2 p-2">Lua NeoVim</p>
+                <div class="w-full bg-white h-0.5 mb-3"></div>
+                <h3 class="text-[24px] text-gray-50 px-2 mb-3">Web Dev nvim config</h3>
+                <p class="text-[16px] text-[#acb3bf] px-2 mb-4">Config for neovim perfect for web developer</p>
+                <div class="px-2"><button class="px-3.5 mb-4 py-1.5 border border-[#acb3bf] bg-[#282c33] text-base font-medium text-white hover:bg-[#c878de]">Github <~>></button></div>
+            </div>
+        </div>
+    </div>
+</section>
+           <!-- 3 section end -->
+
+           <!-- footer stert -->
+           <div class="w-full h-0.5 bg-white mt-12"></div>
+    <footer class="max-w-[1250px] mx-auto px-4 sm:px-6 py-6">
+        <div class="flex flex-col sm:flex-row justify-between gap-6 sm:gap-4">
+            <div class="flex flex-col gap-3">
+                <a class="text-sm sm:text-base text-[#ABB2BF] flex items-center gap-4 sm:gap-7" href="#">
+                    <svg class="flex-shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="16" height="16" fill="#ABB2BF"/>
+                    </svg>
+                    elias@elias-dev.ml
+                </a>
+                <p class="text-sm sm:text-base text-[#ABB2BF]">Web designer and front-end developer</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h4 class="text-xl sm:text-2xl text-gray-300">Media</h4>
+                <div class="flex gap-3">
+                    <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.1641 7.65906C22.543 6.87826 20.8325 6.32099 19.0751 6.00114C19.0592 5.99832 19.0428 6.00076 19.0283 6.0081C19.0137 6.01544 19.0017 6.02733 18.9938 6.04214C18.7735 6.45211 18.5298 6.98835 18.3595 7.40816C16.4651 7.10643 14.5383 7.10643 12.6439 7.40816C12.4539 6.9405 12.239 6.48443 12.0002 6.04214C11.9922 6.02749 11.9801 6.01574 11.9656 6.00842C11.9511 6.0011 11.9348 5.99856 11.9189 6.00114C10.1611 6.31928 8.45021 6.87684 6.82991 7.65906C6.81605 7.66461 6.80445 7.67504 6.7971 7.68858C3.55651 12.7706 2.66745 17.7279 3.10339 22.623C3.10495 22.6459 3.11901 22.6689 3.1362 22.6836C5.02325 24.1507 7.13396 25.2708 9.37832 25.9962C9.39417 26.0014 9.4112 26.0013 9.42693 25.9957C9.44267 25.99 9.45629 25.9793 9.46582 25.965C9.94707 25.2763 10.3752 24.5498 10.7439 23.7856C10.7516 23.7699 10.7543 23.752 10.7514 23.7345C10.7486 23.7171 10.7405 23.7011 10.7283 23.6889C10.7202 23.6809 10.7107 23.6747 10.7002 23.6708C10.027 23.3993 9.37503 23.0731 8.7502 22.6951C8.73275 22.6847 8.71977 22.6677 8.71395 22.6476C8.70814 22.6274 8.70993 22.6057 8.71895 22.5869C8.72427 22.5747 8.73231 22.564 8.74239 22.5557C8.87364 22.4524 9.00489 22.3442 9.12989 22.236C9.14093 22.2266 9.15418 22.2206 9.16821 22.2186C9.18225 22.2166 9.19655 22.2186 9.20957 22.2245C13.3017 24.1858 17.7314 24.1858 21.7735 22.2245C21.787 22.2183 21.8018 22.2162 21.8164 22.2182C21.831 22.2202 21.8448 22.2264 21.8563 22.236C21.9813 22.3442 22.1126 22.4524 22.2438 22.5557C22.2544 22.5639 22.263 22.5747 22.2687 22.5872C22.2744 22.5996 22.277 22.6134 22.2764 22.6272C22.2758 22.641 22.2719 22.6544 22.2651 22.6663C22.2584 22.6781 22.2489 22.688 22.2376 22.6951C21.6142 23.0765 20.9614 23.4024 20.286 23.6692C20.2752 23.6733 20.2655 23.6798 20.2574 23.6883C20.2493 23.6968 20.243 23.7071 20.2391 23.7184C20.2355 23.7294 20.2341 23.741 20.2349 23.7525C20.2357 23.7641 20.2387 23.7754 20.2438 23.7856C20.6188 24.5482 21.0485 25.2763 21.5204 25.965C21.5299 25.9793 21.5435 25.99 21.5593 25.9957C21.575 26.0013 21.592 26.0014 21.6079 25.9962C23.856 25.2731 25.9701 24.1528 27.8594 22.6836C27.8688 22.6768 27.8767 22.6677 27.8824 22.6572C27.8881 22.6467 27.8914 22.635 27.8922 22.623C28.4141 16.9637 27.0188 12.0474 24.1954 7.69022C24.1925 7.68302 24.1883 7.67653 24.1829 7.67116C24.1775 7.66579 24.1711 7.66167 24.1641 7.65906ZM11.3549 19.6417C10.1221 19.6417 9.10801 18.4544 9.10801 16.9982C9.10801 15.5403 10.1033 14.353 11.3549 14.353C12.6158 14.353 13.6205 15.5502 13.6017 16.9982C13.6017 18.4544 12.6064 19.6417 11.3549 19.6417ZM19.661 19.6417C18.4298 19.6417 17.4142 18.4544 17.4142 16.9982C17.4142 15.5403 18.4095 14.353 19.661 14.353C20.922 14.353 21.9282 15.5502 21.9079 16.9982C21.9079 18.4544 20.922 19.6417 19.661 19.6417Z" fill="#ABB2BF"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6">
+            <p class="text-sm sm:text-base text-[#ABB2BF] text-center">© Copyright 2022. Made by Elias</p>
+        </div>
+    </footer>
+</html>
+</body>
